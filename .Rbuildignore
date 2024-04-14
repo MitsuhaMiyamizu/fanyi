@@ -1,3 +1,4 @@
 Makefile
 README_files
 README.Rmd
+^CRAN-SUBMISSION$

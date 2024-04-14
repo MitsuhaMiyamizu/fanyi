@@ -22,6 +22,7 @@ get_translate_text.chatglm <- function(response) {
 ##' @importFrom SSEparser SSEparser
 ##' @importFrom SSEparser parse_sse
 ##' @importFrom openssl sha2
+##' @importFrom purrr map
 #for help, visit: https://open.bigmodel.cn/dev/api#nosdk
 .chatglm_query <- function(prompt) {
   .key_info <- get_translate_appkey('chatglm')
@@ -75,7 +76,8 @@ get_translate_text.chatglm <- function(response) {
     })
   res_temp <- parser$events
   res <- purrr::map(seq_len(length(res_temp) - 1), function(x) {
-    jsonlite::fromJSON(res_temp[[x]]$data)$choices$delta$content}) |> paste(collapse = '')
+      jsonlite::fromJSON(res_temp[[x]]$data)$choices$delta$content
+    }) |> paste(collapse = '')
   return(res)
 }
 

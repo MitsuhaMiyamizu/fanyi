@@ -6,7 +6,7 @@
 \alias{fanyi-package}
 \title{fanyi: Translate Words or Sentences via Online Translators}
 \description{
-Useful functions to translate text for multiple languages using online translators. For example, by translating error messages and descriptive analysis results into a language familiar to the user, it enables a better understanding of the information, thereby reducing the barriers caused by language. It offers several helper functions to query gene information to help interpretation of interested genes (e.g., marker genes, differential expression genes), and provides utilities to translate 'ggplot' graphics.
+Useful functions to translate text for multiple languages using online translators. For example, by translating error messages and descriptive analysis results into a language familiar to the user, it enables a better understanding of the information, thereby reducing the barriers caused by language. It offers several helper functions to query gene information to help interpretation of interested genes (e.g., marker genes, differential expression genes), and provides utilities to translate 'ggplot' graphics. This package is not affiliated with any of the online translators. The developers do not take responsibility for the invoice it incurs when using this package, especially for exceeding the free quota.
 }
 \seealso{
 Useful links:
@@ -23,6 +23,7 @@ Useful links:
 Other contributors:
 \itemize{
   \item Guannan Chen \email{gnchen@hrbmu.edu.cn} [contributor]
+  \item Difei Wang \email{2773997973@qq.com} [contributor]
 }
 
 }

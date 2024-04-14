@@ -1,6 +1,6 @@
 Package: fanyi
 Title: Translate Words or Sentences via Online Translators
-Version: 0.0.6.003
+Version: 0.0.7
 Authors@R: c(
        person("Guangchuang", "Yu", 
               email = "guangchuangyu@gmail.com", 
@@ -20,7 +20,8 @@ Description: Useful functions to translate text for multiple languages using onl
     For example, by translating error messages and descriptive analysis results into a language familiar
     to the user, it enables a better understanding of the information, thereby reducing the barriers caused by language.
     It offers several helper functions to query gene information to help interpretation of interested genes (e.g., marker genes, differential expression genes),
-    and provides utilities to translate 'ggplot' graphics.
+    and provides utilities to translate 'ggplot' graphics. This package is not affiliated with any of the online translators. 
+    The developers do not take responsibility for the invoice it incurs when using this package, especially for exceeding the free quota.
 Depends:
   R (>= 4.2.0)
 Imports:
@@ -29,6 +30,7 @@ Imports:
   httr2,
   jsonlite,
   openssl,
+  purrr,
   rentrez,
   rlang,
   SSEparser,
@@ -41,4 +43,4 @@ URL: https://github.com/YuLab-SMU/fanyi (devel), https://www.biorxiv.org/content
 BugReports: https://github.com/YuLab-SMU/fanyi/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.0
+RoxygenNote: 7.3.1
