@@ -11,8 +11,8 @@ Useful functions to translate text for multiple languages using online translato
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/YuLab-SMU/fanyi (devel)}
-  \item \url{https://www.biorxiv.org/content/10.1101/2023.12.21.572729 (manuscript)}
+  \item \url{https://github.com/YuLab-SMU/fanyi}
+  \item \url{https://www.biorxiv.org/content/10.1101/2023.12.21.572729}
   \item Report bugs at \url{https://github.com/YuLab-SMU/fanyi/issues}
 }
 
