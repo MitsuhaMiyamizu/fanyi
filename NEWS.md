@@ -1,3 +1,7 @@
+# fanyi 0.0.7.001
+
++ update `ydict()` as youdao change its content. (2024-05-30, Thu)
+
 # fanyi 0.0.7
 
 + add claims in the DESCRIPTION that this package is not affiliated with any of the online translators and we take no responsibility (2024-04-14, Sun)
