@@ -21,9 +21,10 @@ the free quota.
 
 To cite fanyi in publications use:
 
-G Yu. Using fanyi to assist research communities in retrieving and
-interpreting information. ***bioRxiv***, 2023. doi:
-[10.1101/2023.12.21.572729](https://www.biorxiv.org/content/10.1101/2023.12.21.572729).
+D Wang, G Chen, L Li, S Wen, Z Xie, L Zhan, S, Xu, J Li, R Wang, Q
+Wang<sup>\*</sup>, G Yu<sup>\*</sup>. [Reducing language barriers,
+promoting information absorption, and communication using *fanyi*]().
+***Chinese Medical Journal***, 2024.
 
 ## :writing_hand: Authors
 
