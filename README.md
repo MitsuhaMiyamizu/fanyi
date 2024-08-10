@@ -5,9 +5,9 @@
 <!-- badges: start -->
 
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/fanyi)](https://cran.r-project.org/package=fanyi)
-![](http://cranlogs.r-pkg.org/badges/grand-total/fanyi)
-![](http://cranlogs.r-pkg.org/badges/fanyi)
-![](http://cranlogs.r-pkg.org/badges/last-week/fanyi)
+[![grand total](http://cranlogs.r-pkg.org/badges/grand-total/fanyi)]
+[![cranlogs_fanyi](http://cranlogs.r-pkg.org/badges/fanyi)]
+[![cranlogs_fanyi_lastweek](http://cranlogs.r-pkg.org/badges/last-week/fanyi)]
 
 <!-- badges: end -->
 
