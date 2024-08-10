@@ -54,7 +54,7 @@ set_translate_source <- function(source) {
 
 ##' @importFrom utils modifyList
 set_translate_appkey <- function(appid=NULL , key=NULL, source, 
-                            region=NULL, user_dict, user_model = 'turbo') {
+                                 region=NULL, user_dict, user_model = 'turbo') {
 
     newkey <- list(appid = appid, key = key)
     if (source == "bing") {
@@ -73,6 +73,22 @@ set_translate_appkey <- function(appid=NULL , key=NULL, source,
             "lite"     = "chatglm_lite"           
             )
         newkey$user_model <- user_model
+    }
+
+    if (source == "qwen") {
+       user_model <- switch(user_model,
+           "turbo"    = "qwen-turbo",
+           "max"      = "qwen-max",
+           "plus"     = "qwen-plus"
+         )
+       newkey$user_model <- user_model
+    }
+
+    if (source == "dsk") {
+       user_model <- switch(user_model,
+           "dsk_chat" = "deepseek-chat",
+           "dsk_code" = "deepseek-coder"
+         )
     }
 
     x <- list()
@@ -116,7 +132,7 @@ fanyi_has_appkey <- function(source) {
 
 #' Translate query sentences
 #' 
-#' This function use online translator API (one of Baidu, bing, youdao, volcengine, caiyun, tencent and LLM-powered chatglm) to translate query sentences
+#' This function use online translator API (one of Baidu, bing, youdao, volcengine, caiyun, tencent and LLM) to translate query sentences
 #' @title translate
 #' @rdname translate
 #' @param x query sentences
@@ -142,7 +158,9 @@ translate <- function(x, from = 'en', to = 'zh') {
            volcengine = volcengine_translate(x, from = from, to = to),
            caiyun     = caiyun_translate(x,     from = from, to = to),  
            tencent    = tencent_translate(x,    from = from, to = to),
-           chatglm    = chatglm_translate(x,    from = from, to = to)
+           chatglm    = chatglm_translate(x,    from = from, to = to),
+           qwen       = qwen_translate(x,       from = from, to = to),
+           dsk        = dsk_translate(x,        from = from, to = to)
         )
 }
 
@@ -216,7 +234,9 @@ standardize_source <- function(source) {
                                   "volcengine", 
                                   "caiyun",
                                   "tencent",
-                                  "chatglm"))
+                                  "chatglm", 
+                                  "qwen", 
+                                  "dsk"))
 
     return(source)
 }

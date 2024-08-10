@@ -2,10 +2,14 @@
 
 # `fanyi`: Translate Words or Sentences via Online Translators
 
+<!-- badges: start -->
+
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/fanyi?color=green)](https://cran.r-project.org/package=fanyi)
 ![](http://cranlogs.r-pkg.org/badges/grand-total/fanyi?color=green)
 ![](http://cranlogs.r-pkg.org/badges/fanyi?color=green)
 ![](http://cranlogs.r-pkg.org/badges/last-week/fanyi?color=green)
+
+<!-- badges: end -->
 
 Useful functions to translate text for multiple languages using online
 translators. For example, by translating error messages and descriptive
