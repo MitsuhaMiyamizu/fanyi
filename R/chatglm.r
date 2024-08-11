@@ -26,7 +26,7 @@ get_translate_text.chatglm <- function(response) {
 ##' @importFrom purrr map
 #for help, visit: https://open.bigmodel.cn/dev/api#nosdk
 .chatglm_query <- function(prompt) {
-  .key_info <- get_translate_appkey('chatglm')
+  .key_info <- set_translate_appkey('chatglm')
   user_model <- newkey$user_model
 
   url <- "https://open.bigmodel.cn/api/paas/v4/chat/completions"
