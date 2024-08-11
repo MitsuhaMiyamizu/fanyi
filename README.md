@@ -4,10 +4,10 @@
 
 <!-- badges: start -->
 
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/fanyi)](https://cran.r-project.org/package=fanyi)
-[![grand total](http://cranlogs.r-pkg.org/badges/grand-total/fanyi)]
-[![cranlogs_fanyi](http://cranlogs.r-pkg.org/badges/fanyi)]
-[![cranlogs_fanyi_lastweek](http://cranlogs.r-pkg.org/badges/last-week/fanyi)]
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/fanyi)](https://cran.r-project.org/package=fanyi)
+[![grand total](https://cranlogs.r-pkg.org/badges/grand-total/fanyi?color=brightgreen)]
+[![cranlogs_fanyi](https://cranlogs.r-pkg.org/badges/fanyi)]
+[![cranlogs_fanyi_lastweek](https://cranlogs.r-pkg.org/badges/last-week/fanyi)]
 
 <!-- badges: end -->
 
