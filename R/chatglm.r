@@ -1,10 +1,9 @@
 ##' @rdname translate
 ##' @export
 chatglm_translate <- function(x, from = 'en', to = 'zh') {
-  #vectorize_translator(x,
-  #                     .fun = .chatglm_translate_query,
-  #                     from = from, to = to)
-                     return(.chatglm_translate_query(x, from, to))
+  vectorize_translator(x,
+                       .fun = .chatglm_translate_query,
+                       from = from, to = to)
 }
 
 #' @method get_translate_text chatglm
