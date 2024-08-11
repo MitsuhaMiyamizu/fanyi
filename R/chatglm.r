@@ -27,8 +27,9 @@ get_translate_text.chatglm <- function(response) {
 #for help, visit: https://open.bigmodel.cn/dev/api#nosdk
 .chatglm_query <- function(prompt) {
   .key_info <- get_translate_appkey('chatglm')
-  user_model <- .key_info$user_model
-
+  # Don't know how to get model parameter from user input, need help#
+  #user_model <- .key_info$user_model
+  user_model <- "glm-4"
   url <- "https://open.bigmodel.cn/api/paas/v4/chat/completions"
   header <- list("alg" = "HS256",
                  "sign_type" = "SIGN")
