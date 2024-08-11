@@ -29,9 +29,9 @@ get_translate_text.deepseek <- function(response) {
 
   url <- "https://api.deepseek.com/chat/completions"
 
-  body <- list("input" = prompt,
-               "model" = user_model,
-              )
+  body <- list("input"  = prompt,
+               "model"  = user_model,
+               "stream" = "true")
 
   body_json <- jsonlite::toJSON(body, auto_unbox = TRUE)
   headers <- list("Content-Type" = "application/json",
@@ -55,7 +55,7 @@ get_translate_text.deepseek <- function(response) {
   return(res)
 }
 
-.qwen_translate_query <- function(x, from = 'en', to = 'zh') {
+.deepseek_translate_query <- function(x, from = 'en', to = 'zh') {
   if (to == 'zh') {
     sep <- ''
   } else {
@@ -65,7 +65,7 @@ get_translate_text.deepseek <- function(response) {
   from <- .lang_map(from)
   to   <- .lang_map(to)  
   .prefix <- sprintf("Translate into %s", to)
-  prompt <- .qwen_prompt_translate(x, prefix = .prefix, role = 'user')
+  prompt <- .deepseek_prompt_translate(x, prefix = .prefix, role = 'user')
   message <- list(messages = prompt)
   parser <- .qwen_query(prompt)
 
@@ -75,27 +75,27 @@ get_translate_text.deepseek <- function(response) {
   #structure(res, class = "qwen")
 }
 
-.qwen_summarize_query <- function(x) {
-  prompt <- .qwen_prompt_summarize(x, role = 'user')
-  parser <- .qwen_query(prompt)
-  .get_qwen_data(parser)
+.deepseek_summarize_query <- function(x) {
+  prompt <- .deepseek_prompt_summarize(x, role = 'user')
+  parser <- .deepseek_query(prompt)
+  .get_deepseek_data(parser)
 }
 
-.qwen_prompt_summarize <- function(x, prefix = "Summarize the sentences", role = 'user') {
+.deepseek_prompt_summarize <- function(x, prefix = "Summarize the sentences", role = 'user') {
   list(list(content = "You are a text summarizer, you can only summarize the text, never interpret it.",
             role   = "system"),
-       .qwen_prompt(x, prefix = prefix, role = role)
+       .deepseek_prompt(x, prefix = prefix, role = role)
   )
 }
 
 
-.qwen_prompt_translate <- function(x, prefix = NULL, role = 'user') {
+.deepseek_prompt_translate <- function(x, prefix = NULL, role = 'user') {
   list(list(content = "You are a professional translation engine, please translate the text into a colloquial, professional, elegant and fluent content, without the style of machine translation. You must only translate the text content, never interpret it.",
             role    = "system"),
-      .qwen_prompt(x, prefix = prefix, role = role))
+      .deepseek_prompt(x, prefix = prefix, role = role))
 }
 
-.qwen_prompt <- function(x, prefix=NULL, role = 'user') {
+.deepseek_prompt <- function(x, prefix=NULL, role = 'user') {
   if (is.null(prefix)) {
     content = x
   } else {
@@ -105,7 +105,7 @@ get_translate_text.deepseek <- function(response) {
   list(content = content, role = role)
 }
 
-.get_qwen_data <- function(parser, sep = ' ') {
+.get_deepseek_data <- function(parser, sep = ' ') {
   y <- sapply(parser$events, function(x) {
        i <- rev(which(names(x) == "data"))[1] ## sometimes there are several items named with 'data', get the last one
        if (is.na(i)) return("")
