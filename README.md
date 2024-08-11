@@ -61,9 +61,10 @@ Alternatively, you can call specific functions to use a specific
 translator, (e.g., `baidu_translate()`, `bing_translate()`,
 `youdao_translate()`, etc.).
 
-** Warning: by using this package you agree to abide by the terms of services of API providers and relevant laws where you reside or you are obliged to follow. PLEASE BE WARNED: Usage of Large Language Model usually incur higher cost than that of traditional domain-specific APIs, of course, here we refer to translation APIs. Use Large Language Model before you have thoroughly evaluate the tokens you might generate. ** 
+**Warning: by using this package you agree to abide by the terms of services of API providers and relevant laws where you reside or you are obliged to follow. PLEASE BE WARNED: Usage of Large Language Model usually incur higher cost than that of traditional domain-specific APIs, of course, here we refer to translation APIs. Use Large Language Model before you have thoroughly evaluated the tokens you might generate.**
 
-** THIS PACKAGE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. **
+**THIS PACKAGE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.**
+
 ### to use `baidu` translate:
 
 1.  go to <https://fanyi-api.baidu.com/manage/developer> and regist as
