@@ -67,10 +67,10 @@ set_translate_appkey <- function(appid=NULL , key=NULL, source,
 
     if (source == "chatglm") {
         user_model <- switch(user_model,
-            "turbo"    = "chatglm_turbo",
-            "pro"      = "chatglm_pro",
-            "standard" = "chatglm_std",
-            "lite"     = "chatglm_lite"           
+            "default"    = "glm-4",
+            "air"        = "glm-4-air",
+            "airx"       = "glm-4-airx",
+            "long"       = "glm-4-long"           
             )
         newkey$user_model <- user_model
     }
