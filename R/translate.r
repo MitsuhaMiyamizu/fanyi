@@ -54,7 +54,7 @@ set_translate_source <- function(source) {
 
 ##' @importFrom utils modifyList
 set_translate_appkey <- function(appid=NULL , key=NULL, source, 
-                                 region=NULL, user_dict, user_model = 'turbo') {
+                                 region=NULL, user_dict, user_model = 'default') {
 
     newkey <- list(appid = appid, key = key)
     if (source == "bing") {
