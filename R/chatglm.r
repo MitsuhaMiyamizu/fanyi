@@ -72,7 +72,7 @@ get_translate_text.chatglm <- function(response) {
     httr2::req_perform()
 
   res_temp <- req |> resp_body_json()
-  return(res_temp)
+  return(res_temp$choices[[1]]$message$content)
 }
 
 .chatglm_translate_query <- function(x, from = 'en', to = 'zh') {
@@ -87,9 +87,8 @@ get_translate_text.chatglm <- function(response) {
   .prefix <- sprintf("Translate into %s", to)
   prompt <- .chatglm_prompt_translate(x, prefix = .prefix, role = 'user')
   parser <- .chatglm_query(prompt)
-  res <- parser$choices[[1]]$message$content
 
-  structure(res, class = "chatglm")
+  structure(parser, class = "chatglm")
 }
 
 .chatglm_summarize_query <- function(x) {
