@@ -15,7 +15,7 @@ bibentry(
     doi     = "10.1097/CM9.0000000000003242",
     PMID    = "",
     url     = "https://doi.org/10.1097/CM9.0000000000003242", 
-    textVersion = paste("Zhan, L., Xu, S., Li, J., Wang, R., Wang, Q., & Yu, G.",
+    textVersion = paste("Wang, D., Chen, G., Li, L., Wen, S., Xie, Z., Luo, X., Zhan, L., Xu, S., Li, J., Wang, R., Wang, Q., & Yu, G.",
                         "Reducing language barriers, promoting information absorption, and communication using fanyi.",
                         "Chinese Medical Journal (2024). doi: 10.1097/CM9.0000000000003242")
 
