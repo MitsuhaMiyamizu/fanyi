@@ -2,10 +2,14 @@
 
 # `fanyi`: Translate Words or Sentences via Online Translators
 
-[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/fanyi?color=green)](https://cran.r-project.org/package=fanyi)
-![](http://cranlogs.r-pkg.org/badges/grand-total/fanyi?color=green)
-![](http://cranlogs.r-pkg.org/badges/fanyi?color=green)
-![](http://cranlogs.r-pkg.org/badges/last-week/fanyi?color=green)
+<!-- badges: start -->
+
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/fanyi)](https://cran.r-project.org/package=fanyi)
+![](https://cranlogs.r-pkg.org/badges/grand-total/fanyi?color=brightgreen)
+![](https://cranlogs.r-pkg.org/badges/fanyi)
+![](https://cranlogs.r-pkg.org/badges/last-week/fanyi)
+
+<!-- badges: end -->
 
 Useful functions to translate text for multiple languages using online
 translators. For example, by translating error messages and descriptive
@@ -21,10 +25,7 @@ the free quota.
 
 To cite fanyi in publications use:
 
-D Wang, G Chen, L Li, S Wen, Z Xie, L Zhan, S, Xu, J Li, R Wang, Q
-Wang<sup>\*</sup>, G Yu<sup>\*</sup>. [Reducing language barriers,
-promoting information absorption, and communication using *fanyi*]().
-***Chinese Medical Journal***, 2024.
+D Wang, G Chen, L Li, S Wen, Z Xie, X Luo, L Zhan, S Xu, J Li, R Wang, Q Wang<sup>\*</sup>, __G Yu__<sup>\*</sup>. [Reducing language barriers, promoting information absorption, and communication using *fanyi*](https://journals.lww.com/cmj/fulltext/9900/reducing_language_barriers,_promoting_information.1158.aspx). __*Chinese Medical Journal*__. 2024, accepted.
 
 ## :writing_hand: Authors
 
@@ -59,6 +60,12 @@ using in `translate()`.
 Alternatively, you can call specific functions to use a specific
 translator, (e.g., `baidu_translate()`, `bing_translate()`,
 `youdao_translate()`, etc.).
+
+**Warning: by using this package you agree to abide by the terms of services of API providers and relevant laws where you reside or you are obliged to follow.** 
+
+**PLEASE BE WARNED: Usage of Large Language Model usually incur higher cost than that of traditional domain-specific APIs, of course, here we refer to translation APIs. Use Large Language Model before you have thoroughly evaluated the tokens you might generate.**
+
+**THIS PACKAGE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.**
 
 ### to use `baidu` translate:
 

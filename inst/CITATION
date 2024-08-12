@@ -2,22 +2,22 @@ citHeader("To cite fanyi in publications use:")
 
 bibentry(
     bibtype  = "article",
-    title  = "Using fanyi to assist research communities in retrieving and interpreting information",
+    title  = "Reducing language barriers, promoting information absorption, and communication using fanyi.",
     author = c(
         person("Guangchuang", "Yu")
         ),
-    year    = "2023",
-    journal = "bioRxiv",
+    year    = "2024",
+    journal = "Chinese Medical Journal",
     volume  = "",
     issue   = "",
     number  = "",
     pages   = "",
-    doi     = "10.1101/2023.12.21.572729",
+    doi     = "10.1097/CM9.0000000000003242",
     PMID    = "",
-    url     = "https://www.biorxiv.org/content/10.1101/2023.12.21.572729", 
-    textVersion = paste("G Yu.",
-                        "Using fanyi to assist research communities in retrieving and interpreting information.",
-                        "bioRxiv. doi: 10.1101/2023.12.21.572729")
+    url     = "https://doi.org/10.1097/CM9.0000000000003242", 
+    textVersion = paste("Wang, D., Chen, G., Li, L., Wen, S., Xie, Z., Luo, X., Zhan, L., Xu, S., Li, J., Wang, R., Wang, Q., & Yu, G.",
+                        "Reducing language barriers, promoting information absorption, and communication using fanyi.",
+                        "Chinese Medical Journal (2024). doi: 10.1097/CM9.0000000000003242")
 
 )
 
