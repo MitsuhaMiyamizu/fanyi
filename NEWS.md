@@ -1,5 +1,7 @@
-# fanyi 0.0.7.001
+# fanyi 0.0.8
 
++ update citation information (2024-08-21, Wed)
++ fixed issue of 'chatglm' (2024-08-07, Wed)
 + update `ydict()` as youdao change its content. (2024-05-30, Thu)
 
 # fanyi 0.0.7
