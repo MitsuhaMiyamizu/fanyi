@@ -24,7 +24,7 @@ To cite fanyi in publications use:
 - D Wang, G Chen, L Li, S Wen, Z Xie, X Luo, L Zhan, S Xu, J Li, R Wang,
   Q Wang<sup>\*</sup>, **G Yu**<sup>\*</sup>. [Reducing language
   barriers, promoting information absorption, and communication using
-  *fanyi*](https://journals.lww.com/cmj/fulltext/9900/reducing_language_barriers,_promoting_information.1158.aspx).
+  *fanyi*](https://journals.lww.com/cmj/fulltext/2024/08200/reducing_language_barriers,_promoting_information.7.aspx).
   ***Chinese Medical Journal***. 2024, 137(16):1950-1956.
 
 ## :writing_hand: Authors
